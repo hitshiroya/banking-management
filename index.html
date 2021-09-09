@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>New Project</title>
+</head>
+<body>
+
+    <!--------------------- Navigation - Bar ---------------------->
+    
+    <!-- <div class="nav-container">
+        <div class="nav-left">
+            <div class="logo-bank-name">
+                <i class="fas fa-rupee-sign"></i>
+                <p>tsfBank</p>
+            </div>
+            <div class="nav-items">Home</div>
+            <div class="nav-items">About</div>
+            <div class="nav-items">Contact</div>
+        </div>
+        <div class="nav-right">
+            <div class="user-name">Sujal Shekhar</div>
+        </div>
+    </div> -->
+
+
+    <nav class="navbar">
+        <div class="brand-title">TSF BANK</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/transaction">Transfer</a></li>
+            <li><a href="/transaction-history">History</a></li>
+            <li><a href="/members">Members</a></li>
+            <li class="balance">Sujal Shekhar</li>
+          </ul>
+        </div>
+      </nav>
+
+    <!----------x---------- Navigation - Bar ----------x----------->
+
+    <!---------------------- Main - Content ----------------------->
+
+
+    <div class="main-content">
+        <div class="heading">
+            <h1>TSF Banking</h1>
+        </div>
+        <div class="bank-short-info">
+            <p>
+                The Sparks Foundation Bank provides you a very trustworthy link to our bank. 
+            </p>
+        </div>
+        <div class="heading-btn">
+            
+                <button class="btn"><a href="/get-started">Getting Started</a></button>
+        </div>
+    </div>
+
+
+    <!-----------x---------- Main - Content -----------x----------->
+
+
+    <div class="image">
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+        
+        toggleButton.addEventListener('click', () => {
+          navbarLinks.classList.toggle('active')
+        })
+        </script>
+</body>
+</html>
